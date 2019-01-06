@@ -1,0 +1,7 @@
+[nginx_hosts]
+192.168.116.150:22 ansible_ssh_user=root ansible_ssh_pass='1'
+[tomcat_hosts]
+192.168.116.154:22 ansible_ssh_user=root ansible_ssh_pass='1'
+[jdk_hosts:children]]
+[nginx_hosts]
+[tomcat_hosts]

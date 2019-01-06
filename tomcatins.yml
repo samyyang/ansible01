@@ -1,0 +1,7 @@
+---
+- hosts: tomcat_hosts
+  remote_user: root
+  roles:
+      - common
+      - { role: jdk,tags: jdk }
+      - { role: tomcat }

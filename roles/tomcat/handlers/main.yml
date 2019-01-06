@@ -1,0 +1,2 @@
+- name: start tomcat service
+  shell: chdir={{ app_dir }}/apache-tomcat-7.0.90/bin nohup ./startup.sh start &

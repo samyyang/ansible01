@@ -1,0 +1,6 @@
+---
+- hosts: jdk_hosts
+  remote_user: root
+  roles:
+      - common
+      - { role: jdk,tags: jdk }
